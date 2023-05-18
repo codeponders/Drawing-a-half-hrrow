@@ -1,0 +1,15 @@
+arrowBaseHeight = int(input())
+arrowBaseWidth = int(input())
+arrowHeadWidth = int(input())
+
+while arrowHeadWidth <= arrowBaseWidth: 
+    arrowHeadWidth = int(input())    
+
+for i in range (arrowBaseHeight):
+    for j in range(arrowBaseWidth):
+        print('*', end='')
+    print()
+for i in range(arrowHeadWidth, 0, -1):
+    for j in range(i):
+        print('*', end='')
+    print()
